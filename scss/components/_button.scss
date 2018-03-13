@@ -1,0 +1,23 @@
+.c-button{
+
+}
+
+.c-button--search{
+  display: inline-block;
+  position: absolute;
+  left: 73px;
+  top: 37%;
+  background: transparent url(../img/search.svg);
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  @include mq($from: tablet){
+    left: 16px;
+    top: 48px;
+  }
+  @include mq($from: desktop){
+    display: none;
+  }
+}

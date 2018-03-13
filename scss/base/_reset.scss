@@ -1,0 +1,81 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+abbr,
+img,
+small,
+strong,
+ol,
+ul,
+li,
+form,
+label,
+article,
+aside,
+footer,
+header,
+figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+strong {
+  //@include basefont-bold;
+}
+
+html {
+  box-sizing: border-box;
+  color: $color-black;
+  direction: rtl;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -moz-box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  //color: inherit;
+}
+
+button,
+input,
+textarea {
+  //@include basefont-regular;
+  color: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+input:not[type="checkbox"],
+button {
+  appearance: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

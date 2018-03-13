@@ -1,0 +1,13 @@
+// Media Queries Breakpoints
+$mobile: 31.25em;
+$mid-mobile: 42.5em;
+$tablet-2: 53.125em;
+$tablet-4: 59.375em;
+
+
+//units :
+$unit-tiny: 4px;
+$unit-small: $unit-tiny * 2;
+$unit: $unit-small * 2;
+$unit-large: $unit * 2;
+$unit-huge: $unit-large * 2;

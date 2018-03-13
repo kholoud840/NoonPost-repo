@@ -1,0 +1,9 @@
+.o-horizontal-list {
+
+  li {
+    display: inline-block;
+    @include not-first-child() {
+      //padding-right: $unit-large;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.c-header {
+  background: $color-black;
+  //padding-top: $unit;
+  padding-bottom: $unit;
+  position: relative;
+
+  .o-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .c-header__logo {
+    a {
+      display: inline-block;
+      padding-top: 14px;
+    }
+  }
+
+}

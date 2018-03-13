@@ -1,0 +1,28 @@
+.o-grid {
+
+  display: grid;
+  grid-gap: $unit;
+  grid-template-rows: 1fr;
+  //grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.o-grid--2 {
+  @include mq($from: tablet) {
+    grid-template-columns: 2fr 3fr;
+  }
+  @include mq($from: desktop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.o-grid--4 {
+  @include mq($from: tablet) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.o-grid--6 {
+  @include mq($from: desktop) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

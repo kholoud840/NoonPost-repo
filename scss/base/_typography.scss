@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'hacen-liner-bold';
+  src:
+          url("../fonts/bold/hacen-liner-xl.woff2"),
+          url('../fonts/bold/hacen-liner-xl.woff') format('woff'),
+          url("../fonts/bold/hacen-liner-xl.ttf")  format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hacen-liner-regular';
+  src: url('../fonts/regular/hacen-liner-print-out.woff2'),
+  url('../fonts/regular/hacen-liner-print-out.woff') format('woff'),
+  url('../fonts/regular/hacen-liner-print-out.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DroidNaskh-Regular';
+  src: url('../fonts/regular/DroidNaskh--Regular.woff2'),
+  url('../fonts/regular/DroidNaskh--Regular.woff') format('woff'),
+  url('../fonts/regular/DroidNaskh--Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: sans-serif;
+  @include basefont-regular;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html{
+  direction: rtl;
+}

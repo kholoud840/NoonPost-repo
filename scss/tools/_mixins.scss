@@ -1,0 +1,22 @@
+
+
+@mixin basefont-regular {
+  font-family: "hacen-liner-regular";
+}
+@mixin basefont-bold {
+  font-family: "hacen-liner-bold";
+}
+@mixin second-basefont-regular {
+  font-family: "DroidNaskh-Regular";
+}
+
+@mixin not-last-child() {
+  &:not(:last-of-type) {
+    @content
+  }
+}
+@mixin not-first-child() {
+  &:not(:first-of-type) {
+    @content
+  }
+}
