@@ -1,0 +1,12 @@
+.c-view-all {
+  border: none;
+  border:1px solid #eee;
+  background: transparent;
+  padding:$unit-small $unit;
+  text-align: center;
+  @include basefont-regular;
+  margin-right: $unit;
+  &:hover{
+    border-color:$color-brand-primary;
+  }
+}

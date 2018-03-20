@@ -1,4 +1,9 @@
-.o-layout--2 {
+
+.o-flex{
+  display: flex;
+  align-items: flex-start;
+}
+.o-flex--2{
   @include mq($from: tablet) {
     display: flex;
     align-items: flex-start;
@@ -6,6 +11,5 @@
     .c-wrapper {
       flex: 1;
     }
-
   }
 }

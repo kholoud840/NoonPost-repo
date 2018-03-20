@@ -124,3 +124,27 @@
   display: inline-block;
 
 }
+
+.c-media--side-icon{
+  padding-right: 40px;
+  position: relative;
+  &::before{
+    content: "";
+    width: 30px;
+    height: 40px;
+    background: red;
+    position: absolute;
+    right: 0;
+    top: 10px;;
+  }
+}
+.c-media--icon-podcast{
+  &::before{
+    background: url("../img/podcast.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.c-media--icon-circle{
+
+}
