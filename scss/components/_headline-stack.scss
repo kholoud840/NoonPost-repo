@@ -1,0 +1,6 @@
+.c-headline-stack {
+  flex-basis: 270px;
+  @include mq($from: tablet) {
+    padding-right: 24px;
+  }
+}

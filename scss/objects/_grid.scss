@@ -14,7 +14,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
+.o-grid--3 {
+  grid-gap:24px;
+  @include mq($from: mobile) {
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  }
+}
 .o-grid--4 {
   @include mq($from: tablet) {
     grid-template-columns: repeat(4, 1fr);

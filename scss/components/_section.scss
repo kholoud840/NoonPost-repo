@@ -1,5 +1,7 @@
 
-.c-section{
+.c-section {
   padding-top: $unit-large;
-  padding-bottom: $unit-large;
+  @include mq($from: tablet) {
+    padding-bottom: $unit-large;
+  }
 }

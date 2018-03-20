@@ -7,3 +7,11 @@
     }
   }
 }
+.o-vertical-list {
+
+  li {
+    @include not-first-child() {
+      //padding-right: $unit-large;
+    }
+  }
+}

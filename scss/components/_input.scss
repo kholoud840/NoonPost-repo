@@ -1,6 +1,6 @@
-.c-input{
+.c-input {
   display: none;
-  @include mq($from: desktop){
+  @include mq($from: desktop) {
     display: inline-block;
     border: none;
     width: 230px;
@@ -9,9 +9,9 @@
     padding-bottom: 8px;
     padding-right: 30px;
     background: transparent url("../img/search.svg") no-repeat right;
-    background-size:20px;
-    ::placeholder{
-      color:#fff;
+    background-size: 20px;
+    ::placeholder {
+      color: #fff;
     }
 
   }

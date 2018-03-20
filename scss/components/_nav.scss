@@ -8,18 +8,19 @@
     margin-right: $unit-large;
   }
 
-
 }
+
 .c-nav-link {
   color: #FFF;
   display: inline-block;
   padding: 3em 0.7em 0.5em 0.7em;
   border-radius: 0 0 4px 4px;
   transition: background-color 0.2s;
-  &:hover{
-    background-color: $color-brand-primary ;
+  &:hover {
+    background-color: $color-brand-primary;
   }
 }
-.c-nav-link--active{
+
+.c-nav-link--active {
   background: $color-brand-primary;
 }
