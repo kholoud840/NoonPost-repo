@@ -50,9 +50,9 @@
 .c-media__headline {
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: $unit-tiny;
+  //margin-bottom: $unit-tiny;
   @include mq($from: tablet) {
-    margin-bottom: $unit;
+   // margin-bottom: $unit;
   }
   a {
     color: $color-black;
@@ -72,7 +72,7 @@
   font-size: 14px;
   display: inline-block;
   a {
-    color: $color-black;
+    color: #525252;
     font-weight: bold;
     &:hover {
       color: $color-brand-primary;
@@ -99,7 +99,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 3px 24px;
+  padding: 2px 12px;
   a {
     color: #fff;
   }
@@ -119,20 +119,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 40px;
-  height: 40px;
+  width: 33px;
+  height: 33px;
   display: inline-block;
 
 }
 
 .c-media--side-icon{
-  padding-right: 40px;
+  padding-right: 36px;
   position: relative;
   &::before{
     content: "";
     width: 30px;
     height: 40px;
-    background: red;
     position: absolute;
     right: 0;
     top: 10px;;
@@ -141,10 +140,14 @@
 .c-media--icon-podcast{
   &::before{
     background: url("../img/podcast.svg");
-    background-size: contain;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
   }
 }
-.c-media--icon-circle{
 
+.c-media__duration{
+  color: #575757;
+}
+.c-media{
+  margin-bottom: 10px;
 }

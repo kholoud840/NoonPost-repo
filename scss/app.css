@@ -305,11 +305,7 @@ html {
 
 .c-media__headline {
   font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 4px; }
-  @media (min-width: 46.25em) {
-    .c-media__headline {
-      margin-bottom: 16px; } }
+  font-size: 18px; }
   .c-media__headline a {
     color: #333333; }
     .c-media__headline a:hover {
@@ -322,7 +318,7 @@ html {
   font-size: 14px;
   display: inline-block; }
   .c-media__byline a {
-    color: #333333;
+    color: #525252;
     font-weight: bold; }
     .c-media__byline a:hover {
       color: #C33439; }
@@ -343,7 +339,7 @@ html {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 3px 24px; }
+  padding: 2px 12px; }
   .c-media__status a {
     color: #fff; }
 
@@ -359,26 +355,31 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 40px;
-  height: 40px;
+  width: 33px;
+  height: 33px;
   display: inline-block; }
 
 .c-media--side-icon {
-  padding-right: 40px;
+  padding-right: 36px;
   position: relative; }
   .c-media--side-icon::before {
     content: "";
     width: 30px;
     height: 40px;
-    background: red;
     position: absolute;
     right: 0;
     top: 10px; }
 
 .c-media--icon-podcast::before {
   background: url("../img/podcast.svg");
-  background-size: contain;
+  background-size: 30px 30px;
   background-repeat: no-repeat; }
+
+.c-media__duration {
+  color: #575757; }
+
+.c-media {
+  margin-bottom: 10px; }
 
 .c-headline-stack {
   flex-basis: 270px; }
@@ -386,11 +387,26 @@ html {
     .c-headline-stack {
       padding-right: 24px; } }
 
+.c-headline-stack {
+  counter-reset: step; }
+  .c-headline-stack .c-media {
+    padding-top: 12px;
+    padding-bottom: 12px; }
+    .c-headline-stack .c-media::before {
+      content: '';
+      counter-increment: step;
+      content: counters(step,"");
+      padding-right: 10px;
+      padding-top: 4px;
+      background: url("../img/random-path.svg");
+      background-size: contain;
+      background-repeat: no-repeat; }
+
 .c-view-all {
   border: none;
   border: 1px solid #eee;
   background: transparent;
-  padding: 8px 16px;
+  padding: 4px 16px;
   text-align: center;
   font-family: "hacen-liner-regular";
   margin-right: 16px; }
