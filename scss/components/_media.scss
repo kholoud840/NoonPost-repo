@@ -1,4 +1,6 @@
-
+.c-media{
+  margin-bottom: 10px;
+}
 .c-media--image {
   width: 100%;
   position: relative;
@@ -20,7 +22,8 @@
 }
 
 .c-media--large {
-
+  margin-bottom: 0;
+  padding-bottom: 18px;
   .c-media--image {
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
     &::after {
@@ -34,6 +37,7 @@
   flex-direction: column;
   padding-top: 12px;
   padding-bottom: 12px;
+  margin-bottom: 0;
   .c-media__headline {
     margin-top: auto;
   }
@@ -87,7 +91,6 @@
 
 .c-media--main-content {
   @include mq($from: tablet) {
-    padding-left: 22px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +150,4 @@
 
 .c-media__duration{
   color: #575757;
-}
-.c-media{
-  margin-bottom: 10px;
 }
