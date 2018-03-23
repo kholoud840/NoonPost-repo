@@ -1,9 +1,10 @@
 
-.o-flex{
+.o-flex {
   display: flex;
   align-items: flex-start;
 }
-.o-flex--2{
+
+.o-flex--2 {
   @include mq($from: tablet) {
     display: flex;
     align-items: flex-start;

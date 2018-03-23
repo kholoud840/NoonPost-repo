@@ -5,7 +5,7 @@
   }
 }
 
-.c-headline-stack{
+.c-headline-stack {
   counter-reset: step;
   .c-media {
     padding-top: 12px;
@@ -16,10 +16,12 @@
       content: counters(step, "");
       padding-right: 10px;
       padding-top: 4px;
-
       background: url("../img/random-path.svg");
       background-size: contain;
       background-repeat: no-repeat;
     }
   }
 }
+
+
+

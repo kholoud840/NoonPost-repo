@@ -5,3 +5,9 @@
     padding-bottom: $unit-large;
   }
 }
+
+.c-section--pattern{
+  background: url(../img/noon-pattern.png)  center bottom, #f4f4f4;
+  background-size: cover;
+  background-position: center;
+}

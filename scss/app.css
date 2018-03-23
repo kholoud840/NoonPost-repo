@@ -108,10 +108,18 @@ html {
   grid-template-rows: 1fr; }
 
 @media (min-width: 46.25em) {
-  .o-grid--2 {
+  .o-grid-lg--2 {
     grid-template-columns: 2fr 3fr; } }
 @media (min-width: 61.25em) {
+  .o-grid-lg--2 {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 46.25em) {
   .o-grid--2 {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 23.125em) {
+  .o-grid-sm--2 {
     grid-template-columns: repeat(2, 1fr); } }
 
 .o-grid--3 {
@@ -120,13 +128,16 @@ html {
     .o-grid--3 {
       grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); } }
 
+@media (min-width: 20em) {
+  .o-grid--4 {
+    grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); } }
 @media (min-width: 46.25em) {
   .o-grid--4 {
     grid-template-columns: repeat(4, 1fr); } }
 
-@media (min-width: 61.25em) {
+@media (min-width: 20em) {
   .o-grid--6 {
-    grid-template-columns: repeat(6, 1fr); } }
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); } }
 
 .o-horizontal-list li {
   display: inline-block; }
@@ -267,6 +278,11 @@ html {
     .c-section {
       padding-bottom: 32px; } }
 
+.c-section--pattern {
+  background: url(../img/noon-pattern.png) center bottom, #f4f4f4;
+  background-size: cover;
+  background-position: center; }
+
 .c-media {
   margin-bottom: 10px; }
 
@@ -384,6 +400,52 @@ html {
 .c-media__duration {
   color: #575757; }
 
+.c-media--number {
+  position: absolute;
+  font-size: 32px;
+  color: #fff;
+  right: 8px; }
+
+.c-media__shares {
+  color: #6e6e6e; }
+  .c-media__shares strong {
+    font-size: 32px;
+    font-weight: bold; }
+
+.c-media--rounded .c-media--image {
+  box-shadow: 0 0 0 10px #fff;
+  border-radius: 50%;
+  background: #525252; }
+  .c-media--rounded .c-media--image::after {
+    padding-bottom: 100%; }
+
+.c-media--dark .c-media--image::before {
+  content: '';
+  background: rgba(48, 48, 48, 0.8);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1; }
+.c-media--dark .c-media__byline {
+  background: #C2C2C2;
+  display: block;
+  padding: 8px; }
+.c-media--dark .c-media__headline {
+  position: absolute;
+  right: 8px;
+  width: 100%;
+  z-index: 1;
+  bottom: 8px;
+  font-weight: normal; }
+  .c-media--dark .c-media__headline a {
+    color: #fff; }
+
+.c-media__side-content {
+  display: flex;
+  flex-direction: column; }
+  .c-media__side-content .c-media__social-media {
+    margin-top: auto; }
+
 .c-headline-stack {
   flex-basis: 270px; }
   @media (min-width: 46.25em) {
@@ -415,5 +477,36 @@ html {
   margin-right: 16px; }
   .c-view-all:hover {
     border-color: #C33439; }
+
+.c-footer {
+  background: #C33439; }
+
+.c-file {
+  background: #f3f3f3 url("../img/noon-pattern.png");
+  position: relative;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .c-file a {
+    font-weight: bold;
+    color: #333333;
+    font-size: 20px; }
+  .c-file::after {
+    content: '';
+    position: absolute;
+    content: '';
+    top: -1px;
+    left: -1px;
+    border-style: solid;
+    border-width: 26px 26px 0 0;
+    border-color: #fff #ddd;
+    transition: all 0.2s ease; }
+  .c-file:hover::after {
+    border-width: 30px 30px 0 0;
+    border-color: #fff #eaeaea; }
+
+.c-icon {
+  fill: #9A9A9A; }
 
 /*# sourceMappingURL=app.css.map */
