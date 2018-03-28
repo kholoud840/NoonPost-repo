@@ -450,7 +450,7 @@ html {
   padding: 8px; }
 .c-media--dark .c-media__headline {
   position: absolute;
-  right: 8px;
+  padding-right: 8px;
   width: 100%;
   z-index: 1;
   bottom: 8px;
