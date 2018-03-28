@@ -1,9 +1,11 @@
 .c-title {
   color: $color-brand-primary;
   font-size: 24px;
-  margin-bottom: $unit-large;
+  margin-bottom: $unit;
   font-weight: 700;
-  //text-align: center;
+  @include mq($from: tablet){
+    margin-bottom: $unit-large;
+  }
 }
 
 .c-subtitle {

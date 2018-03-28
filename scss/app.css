@@ -272,16 +272,21 @@ html {
 .c-title {
   color: #C33439;
   font-size: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-weight: 700; }
+  @media (min-width: 46.25em) {
+    .c-title {
+      margin-bottom: 32px; } }
 
 .c-subtitle {
   margin-bottom: 32px; }
 
 .c-section {
-  padding-top: 32px; }
+  padding-top: 16px;
+  padding-bottom: 16px; }
   @media (min-width: 46.25em) {
     .c-section {
+      padding-top: 32px;
       padding-bottom: 32px; } }
 
 .c-section--pattern {
