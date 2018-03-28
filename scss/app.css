@@ -1,3 +1,9 @@
+.u-border-top {
+  border-top: 1px solid #eee; }
+
+.u-border-bottom {
+  border-bottom: 1px solid #eee; }
+
 html,
 body,
 div,
@@ -377,12 +383,6 @@ html {
   padding: 2px 12px; }
   .c-media__status a {
     color: #fff; }
-
-.c-media--underline {
-  border-bottom: 1px solid #eee; }
-
-.c-media--topline {
-  border-top: 1px solid #eee; }
 
 .c-media--video {
   background: url("../img/video.svg");
