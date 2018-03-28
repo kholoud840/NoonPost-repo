@@ -481,9 +481,9 @@ html {
       background-repeat: no-repeat; }
 
 .c-view-all {
-  border: none;
   border: 1px solid #eee;
-  background: transparent;
+  color: #525252;
+  display: inline-block;
   padding: 4px 16px;
   text-align: center;
   font-family: "hacen-liner-regular";

@@ -1,7 +1,7 @@
 .c-view-all {
-  border: none;
   border:1px solid #eee;
-  background: transparent;
+  color: $color-grey;
+  display: inline-block;
   padding:$unit-tiny $unit;
   text-align: center;
   @include basefont-regular;
