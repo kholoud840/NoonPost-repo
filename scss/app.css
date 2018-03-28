@@ -511,7 +511,8 @@ html {
 .c-file {
   background: #f3f3f3 url("../img/noon-pattern.png");
   position: relative;
-  height: 100px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: flex;
   justify-content: center;
   align-items: center; }

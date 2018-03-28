@@ -1,7 +1,8 @@
 .c-file {
   background: #f3f3f3 url("../img/noon-pattern.png");
   position: relative;
-  height: 100px;
+  padding-top: $unit-large;
+  padding-bottom: $unit-large;
   display: flex;
   justify-content: center;
   align-items: center;
