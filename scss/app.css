@@ -425,7 +425,8 @@ html {
   position: absolute;
   font-size: 32px;
   color: #fff;
-  right: 8px; }
+  right: 8px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.14); }
 
 .c-media__shares {
   color: #6e6e6e; }
