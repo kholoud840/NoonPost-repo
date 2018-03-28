@@ -10,6 +10,7 @@
   .c-media {
     padding-top: 12px;
     padding-bottom: 12px;
+    margin-bottom: 0;
     &::before {
       content: '';
       counter-increment: step;
