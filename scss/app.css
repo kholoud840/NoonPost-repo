@@ -92,15 +92,15 @@ html {
   direction: rtl; }
 
 .o-container {
-  width: 1420px;
+  width: 1148px;
   max-width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto; }
 
-.o-container--main {
-  width: 1148px; }
+.o-container--large {
+  width: 1420px; }
 
 .o-grid {
   display: grid;
@@ -394,7 +394,7 @@ html {
 
 .c-media--icon-podcast::before {
   background: url("../img/podcast.svg");
-  background-size: 30px 30px;
+  background-size: 24px 30px;
   background-repeat: no-repeat; }
 
 .c-media__duration {
@@ -481,6 +481,20 @@ html {
 .c-footer {
   background: #C33439; }
 
+.c-footer__link {
+  margin-right: 32px; }
+  .c-footer__link a {
+    color: #f3f3f3; }
+
+.c-footer__copy-right {
+  color: #f3f3f3; }
+
+.c-footer__social-media {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid;
+  border-top: 2px solid; }
+
 .c-file {
   background: #f3f3f3 url("../img/noon-pattern.png");
   position: relative;
@@ -507,6 +521,32 @@ html {
     border-color: #fff #eaeaea; }
 
 .c-icon {
+  width: 26px;
+  height: 26px; }
+
+.c-icon--white {
+  fill: #f3f3f3; }
+
+.c-icon--gray {
   fill: #9A9A9A; }
+
+.c-icon--small {
+  width: 20px;
+  height: 20px; }
+
+.c-icon--facebook {
+  fill: #3b5999; }
+
+.c-icon--twitter {
+  fill: #55acee; }
+
+.c-icon--google-plus {
+  fill: #dd4b39; }
+
+.c-icon--rounded {
+  width: 36px;
+  height: 36px;
+  background: #F3F3F3;
+  border-radius: 50%; }
 
 /*# sourceMappingURL=app.css.map */

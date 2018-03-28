@@ -1,3 +1,21 @@
-.c-footer{
+.c-footer {
   background: $color-brand-primary;
+}
+
+.c-footer__link {
+  margin-right: $unit-large;
+  a {
+    color: $color-white;
+  }
+}
+
+.c-footer__copy-right {
+  color: $color-white;
+}
+
+.c-footer__social-media {
+  padding-top: $unit-small;
+  padding-bottom: $unit-small;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
 }

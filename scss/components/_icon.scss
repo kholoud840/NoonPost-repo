@@ -1,3 +1,36 @@
 .c-icon {
-  fill: #9A9A9A;
+  width: 26px;
+  height: 26px;
+}
+
+.c-icon--white {
+  fill: $color-white;
+}
+
+.c-icon--gray {
+  fill: $color-light-gray;
+}
+
+.c-icon--small {
+  width: 20px;
+  height: 20px;
+}
+
+.c-icon--facebook {
+  fill: $color-facebook;
+}
+
+.c-icon--twitter {
+  fill: $color-twitter;
+}
+
+.c-icon--google-plus {
+  fill: $color-google-plus;
+}
+
+.c-icon--rounded {
+  width: 36px;
+  height: 36px;
+  background: #F3F3F3;
+  border-radius: 50%;
 }
