@@ -171,9 +171,11 @@ html {
   .c-header .o-container {
     display: flex;
     align-items: center; }
-  .c-header .c-header__logo a {
-    display: inline-block;
-    padding-top: 14px; }
+  .c-header .c-header__logo {
+    margin-left: 20px; }
+    .c-header .c-header__logo a {
+      display: inline-block;
+      padding-top: 14px; }
 
 .c-menu-mobile {
   height: 2px;
@@ -237,6 +239,9 @@ html {
 .c-search {
   margin-right: auto;
   margin-top: 32px; }
+  .c-search input[type=search] {
+    font-family: "hacen-liner-regular";
+    color: #f3f3f3; }
 
 .c-input {
   display: none; }

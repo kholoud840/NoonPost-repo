@@ -1,6 +1,5 @@
 .c-header {
   background: $color-black;
-  //padding-top: $unit;
   padding-bottom: $unit;
   position: relative;
 
@@ -10,6 +9,7 @@
   }
 
   .c-header__logo {
+    margin-left: 20px;
     a {
       display: inline-block;
       padding-top: 14px;

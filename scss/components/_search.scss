@@ -1,4 +1,9 @@
 .c-search {
   margin-right: auto;
   margin-top: $unit-large;
+
+  input[type= search]{
+    @include basefont-regular;
+    color: $color-white;
+  }
 }
