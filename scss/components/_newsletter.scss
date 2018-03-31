@@ -1,0 +1,50 @@
+
+.c-newsletter {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 4px -3px 1px #00000021;
+  margin: 16px 0;
+  @include mq($from: tablet){
+    margin: 0 ;
+    margin-bottom: -32px;
+    flex: 0.6;
+  }
+  .c-wrapper {
+   // @include mq($from: tablet) {
+      background-image: repeating-linear-gradient(to bottom, #eee, #eee 1px, #ffffff 1px, #ffffff 34px);
+    //}
+  }
+}
+
+.c-newsletter__title {
+  font-size: 24px;
+  color: $color-black;
+  font-weight: bold;
+  margin-bottom: $unit-small;
+}
+
+.c-newsletter__form {
+  label {
+    display: none;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: $unit-small;
+    @include basefont-regular;
+  }
+
+  button {
+    padding: 16px 36px;
+    background: $color-brand-primary;
+    border: none;
+    color: $color-white;
+    @include basefont-regular;
+  }
+
+}
+
+.c-newsletter__text {
+  font-size: 14px;
+  margin-bottom: $unit-small;
+  margin-top: $unit-small;
+}

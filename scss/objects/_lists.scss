@@ -2,8 +2,11 @@
 
   li {
     display: inline-block;
-    @include not-first-child() {
-      //padding-right: $unit-large;
+   // @include not-first-child() {
+      //margin-left: $unit-large;
+    //}
+    a{
+      display: inline-block;
     }
   }
 }
