@@ -5,10 +5,16 @@
 
 .c-icon--white {
   fill: $color-white;
+  &:hover{
+    fill: $color-brand-dark;
+  }
 }
 
 .c-icon--gray {
   fill: $color-light-gray;
+  &:hover{
+    fill: #7f7f7f;
+  }
 }
 
 .c-icon--small {

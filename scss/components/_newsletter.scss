@@ -36,7 +36,11 @@
     background: $color-brand-primary;
     border: none;
     color: $color-white;
+    transition: background 0.2;
     @include basefont-regular;
+    &:hover{
+      background: $color-brand-dark;
+    }
   }
 
 }

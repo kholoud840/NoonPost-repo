@@ -63,7 +63,8 @@
   a {
     color: $color-black;
     &:hover {
-      color: $color-brand-primary;
+      //color: $color-brand-primary;
+      text-decoration: underline;
     }
     &::after {
       content: "";
@@ -159,6 +160,10 @@
 }
 
 .c-media--horizontal {
+  transition: transform 0.2s ease-out;
+  &:hover{
+    background: linear-gradient(to left, #cacaca, rgba(0, 0, 0, 0));
+  }
   .c-media--image{
     margin-bottom: 0;
   }
@@ -229,5 +234,6 @@
 
   .c-media__social-media {
     margin-top: auto;
+    z-index: 2;
   }
 }
