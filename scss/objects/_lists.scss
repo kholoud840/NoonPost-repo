@@ -2,14 +2,20 @@
 
   li {
     display: inline-block;
-   // @include not-first-child() {
-      //margin-left: $unit-large;
-    //}
     a{
       display: inline-block;
     }
   }
 }
+.o-horizontal-list--expanded {
+
+  li {
+     //@include not-first-child() {
+       margin-left: $unit-large;
+   // }
+  }
+}
+
 .o-vertical-list {
 
   li {

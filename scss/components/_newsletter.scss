@@ -4,15 +4,13 @@
   padding: 20px;
   box-shadow: 4px -3px 1px #00000021;
   margin: 16px 0;
-  @include mq($from: tablet){
-    margin: 0 ;
-    margin-bottom: -32px;
+  margin-bottom: -20px;
+  @include mq($from: tablet) {
+    //margin: 0;
     flex: 0.6;
   }
   .c-wrapper {
-   // @include mq($from: tablet) {
-      background-image: repeating-linear-gradient(to bottom, #eee, #eee 1px, #ffffff 1px, #ffffff 34px);
-    //}
+    background-image: repeating-linear-gradient(to bottom, #eee, #eee 1px, #ffffff 1px, #ffffff 34px);
   }
 }
 
