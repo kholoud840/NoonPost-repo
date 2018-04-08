@@ -7,9 +7,9 @@
 
 .c-headline-stack {
   counter-reset: step;
-  .c-media {
-    padding-top: 12px;
-    padding-bottom: 12px;
+  .c-media--side-count {
+    //padding-top: 12px;
+    //padding-bottom: 12px;
     margin-bottom: 0;
     &::before {
       content: '';

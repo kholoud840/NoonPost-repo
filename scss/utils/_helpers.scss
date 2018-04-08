@@ -5,3 +5,33 @@
 .u-border-bottom {
   border-bottom: 1px solid #eee;
 }
+
+.u-side-content{
+    padding-right: 36px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 30px;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+  }
+
+}
+
+.u-offset-vertical {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+
+.u-offset-bottom {
+  padding-bottom: $unit-huge;
+}
+.u-offset-right{
+  margin-right: $unit-huge;
+}
+.u-offset-left{
+  margin-right: $unit;
+}

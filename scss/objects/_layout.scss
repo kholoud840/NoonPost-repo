@@ -1,16 +1,21 @@
 
 .o-flex {
   display: flex;
+}
+.o-flex--start{
   align-items: flex-start;
 }
-
+.o-flex--center{
+  align-items: center;
+}
 .o-flex--2 {
   @include mq($from: tablet) {
     display: flex;
     align-items: flex-start;
 
-    .c-wrapper {
+    .o-wrapper {
       flex: 1;
     }
   }
 }
+

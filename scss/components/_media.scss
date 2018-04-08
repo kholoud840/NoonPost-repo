@@ -134,7 +134,7 @@
 
 }
 
-.c-media--side-icon {
+/*.c-media--side-icon {
   padding-right: 36px;
   position: relative;
   &::before {
@@ -146,7 +146,7 @@
     top: 10px;;
   }
 }
-
+*/
 .c-media--icon-podcast {
   &::before {
     background: url("../img/podcast.svg");
@@ -189,7 +189,7 @@
 .c-media--rounded {
 
   .c-media--image {
-    box-shadow: 0 0 0 10px #fff;
+    ///box-shadow: 0 0 0 10px #fff;
     border-radius: 50%;
     background: #525252;
     &::after {
@@ -236,4 +236,10 @@
     margin-top: auto;
     z-index: 2;
   }
+}
+
+.c-media__subtitle{
+  color: $color-brand-primary;
+  font-weight: bold;
+  font-size: 22px;
 }

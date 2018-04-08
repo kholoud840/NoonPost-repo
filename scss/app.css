@@ -1,9 +1,3 @@
-.u-border-top {
-  border-top: 1px solid #eee; }
-
-.u-border-bottom {
-  border-bottom: 1px solid #eee; }
-
 html,
 body,
 div,
@@ -55,7 +49,8 @@ html {
   -moz-box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 button,
 input,
@@ -154,14 +149,19 @@ html {
   margin-left: 32px; }
 
 .o-flex {
-  display: flex;
+  display: flex; }
+
+.o-flex--start {
   align-items: flex-start; }
+
+.o-flex--center {
+  align-items: center; }
 
 @media (min-width: 46.25em) {
   .o-flex--2 {
     display: flex;
     align-items: flex-start; }
-    .o-flex--2 .c-wrapper {
+    .o-flex--2 .o-wrapper {
       flex: 1; } }
 
 .c-header {
@@ -302,6 +302,9 @@ html {
   background-size: cover;
   background-position: center; }
 
+.c-section--background {
+  background: #f4f4f4; }
+
 .c-media {
   position: relative; }
 
@@ -407,17 +410,19 @@ html {
   height: 33px;
   display: inline-block; }
 
-.c-media--side-icon {
+/*.c-media--side-icon {
   padding-right: 36px;
-  position: relative; }
-  .c-media--side-icon::before {
+  position: relative;
+  &::before {
     content: "";
     width: 30px;
     height: 40px;
     position: absolute;
     right: 0;
-    top: 10px; }
-
+    top: 10px;;
+  }
+}
+*/
 .c-media--icon-podcast::before {
   background: url("../img/podcast.svg");
   background-size: 24px 30px;
@@ -447,7 +452,6 @@ html {
     font-weight: bold; }
 
 .c-media--rounded .c-media--image {
-  box-shadow: 0 0 0 10px #fff;
   border-radius: 50%;
   background: #525252; }
   .c-media--rounded .c-media--image::after {
@@ -483,6 +487,11 @@ html {
     margin-top: auto;
     z-index: 2; }
 
+.c-media__subtitle {
+  color: #C33439;
+  font-weight: bold;
+  font-size: 22px; }
+
 .c-headline-stack {
   flex-basis: 270px; }
   @media (min-width: 46.25em) {
@@ -491,11 +500,9 @@ html {
 
 .c-headline-stack {
   counter-reset: step; }
-  .c-headline-stack .c-media {
-    padding-top: 12px;
-    padding-bottom: 12px;
+  .c-headline-stack .c-media--side-count {
     margin-bottom: 0; }
-    .c-headline-stack .c-media::before {
+    .c-headline-stack .c-media--side-count::before {
       content: '';
       counter-increment: step;
       content: counters(step,"");
@@ -639,7 +646,7 @@ html {
   @media (min-width: 46.25em) {
     .c-newsletter {
       flex: 0.6; } }
-  .c-newsletter .c-wrapper {
+  .c-newsletter .o-wrapper {
     background-image: repeating-linear-gradient(to bottom, #eee, #eee 1px, #ffffff 1px, #ffffff 34px); }
 
 .c-newsletter__title {
@@ -668,5 +675,86 @@ html {
   font-size: 14px;
   margin-bottom: 8px;
   margin-top: 8px; }
+
+.c-avatar {
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+  border: 1.6px solid #D3D3D3; }
+
+.c-article__thumb {
+  margin-top: -70px;
+  width: 90%;
+  max-width: 755.39px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 16px; }
+  .c-article__thumb::after {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: 56%; }
+  .c-article__thumb img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.c-article__title {
+  font-size: 32px;
+  margin-bottom: 16px; }
+
+.bla .c-media--image {
+  border-radius: 50%;
+  background: #525252; }
+  .bla .c-media--image::after {
+    padding-bottom: 100%; }
+
+.c-article__byline {
+  font-size: 12px; }
+
+.c-article__author a {
+  color: #333333;
+  font-weight: bold; }
+
+.c-article__bottom-content {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 16px; }
+
+.c-article-content {
+  padding-bottom: 16px; }
+
+.u-border-top {
+  border-top: 1px solid #eee; }
+
+.u-border-bottom {
+  border-bottom: 1px solid #eee; }
+
+.u-side-content {
+  padding-right: 36px;
+  position: relative; }
+  .u-side-content::before {
+    content: "";
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 10px; }
+
+.u-offset-vertical {
+  padding-top: 12px;
+  padding-bottom: 12px; }
+
+.u-offset-bottom {
+  padding-bottom: 64px; }
+
+.u-offset-right {
+  margin-right: 64px; }
+
+.u-offset-left {
+  margin-right: 16px; }
 
 /*# sourceMappingURL=app.css.map */
