@@ -24,3 +24,47 @@
 .c-nav-link--active {
   background: $color-brand-primary;
 }
+.c-nav{
+  //max-height: 0px;
+  //transition: max-height 1s;
+}
+.c-nav.open {
+
+  @media (max-width: 990px) {
+
+  height: auto;
+  display: block;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 100%;
+  z-index: 1;
+   // max-height: 200px;
+    // transition: all 0.2s;
+  ul {
+    width: 100%;
+  }
+  li {
+    display: block;
+    width: 100%;
+    //@include not-last-child() {
+    border-bottom: 1px solid #eee;
+    //}
+
+    a {
+      display: inline-block;
+      padding: $unit-small $unit;
+      width: 100%;
+      border-radius: 0;
+      color: $color-black;
+
+    }
+
+    .c-nav-link--active {
+      color: $color-white;
+    }
+
+  }
+
+}}
