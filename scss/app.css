@@ -244,14 +244,14 @@ html {
     color: #f3f3f3; }
 
 .c-search--mobile {
-  display: none; }
+  display: none;
+  position: absolute; }
 
 @media (max-width: 990px) {
   .c-search--mobile.open {
     display: block;
     background: #a5a5a5;
     padding: 8px;
-    position: absolute;
     top: 100%;
     left: 0;
     right: 0;
@@ -333,7 +333,12 @@ html {
       margin-bottom: 32px; } }
 
 .c-subtitle {
-  margin-bottom: 32px; }
+  margin-bottom: 20px; }
+
+.c-title--path {
+  background: url("../img/section-title-path.svg") no-repeat;
+  background-position: right bottom;
+  padding-bottom: 4px; }
 
 .c-section {
   padding-top: 16px;
@@ -681,7 +686,9 @@ html {
   width: 36px;
   height: 36px;
   background: #F3F3F3;
-  border-radius: 50%; }
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3; }
 
 .c-newsletter {
   background: #fff;
@@ -728,14 +735,21 @@ html {
   margin-left: 8px;
   border: 1.6px solid #D3D3D3; }
 
+.c-article p {
+  padding-bottom: 16px;
+  line-height: 2; }
+.c-article strong {
+  font-weight: bold; }
+
 .c-article__thumb {
   margin-top: -70px;
-  width: 90%;
-  max-width: 755.39px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   margin-bottom: 16px; }
+  @media (min-width: 46.25em) {
+    .c-article__thumb {
+      max-width: 755.39px; } }
   .c-article__thumb::after {
     content: "";
     display: block;
@@ -768,10 +782,30 @@ html {
 
 .c-article__bottom-content {
   border-bottom: 1px solid #ccc;
-  padding-bottom: 16px; }
+  padding-bottom: 16px;
+  position: relative; }
+  .c-article__bottom-content::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 64px;
+    border-left: 8px solid transparent;
+    border-top: 8px solid #9A9A9A;
+    border-right: 8px solid transparent; }
 
 .c-article-content {
   padding-bottom: 16px; }
+
+.c-article__subtitle {
+  color: #C33439;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: bold; }
+
+.c-ad {
+  margin-top: 16px;
+  margin-bottom: 16px; }
 
 .u-border-top {
   border-top: 1px solid #eee; }

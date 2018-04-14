@@ -1,5 +1,11 @@
 .c-article {
-
+p{
+  padding-bottom: $unit;
+  line-height: 2;
+}
+  strong{
+    font-weight: bold;
+  }
 }
 
 .c-article__date {
@@ -8,12 +14,15 @@
 
 .c-article__thumb {
   margin-top: -70px;
-  width: 90%;
-  max-width: 755.39px;;
+ // width: 90%;
+  //max-width: 755.39px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   margin-bottom: $unit;
+  @include mq($from:tablet){
+    max-width: 755.39px;
+  }
   &::after {
     content: "";
     display: block;
@@ -63,9 +72,26 @@
 .c-article__bottom-content{
   border-bottom: 1px solid #ccc;
   padding-bottom: $unit;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top:100%;
+    right:$unit-huge;
+    border-left: $unit-small solid transparent;
+    border-top: $unit-small solid $color-light-gray;
+    border-right: $unit-small solid transparent;
+  }
 }
 
 .c-article-content{
   padding-bottom: $unit;
 }
 
+.c-article__subtitle{
+  color: $color-brand-primary;
+  margin-top: $unit;
+  margin-bottom: $unit;
+  font-size: 22px;
+  font-weight: bold;
+}

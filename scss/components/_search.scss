@@ -10,6 +10,7 @@
 
 .c-search--mobile {
   display: none;
+  position: absolute;
 }
 
 .c-search--mobile.open {
@@ -17,7 +18,7 @@
     display: block;
     background: #a5a5a5;
     padding: 8px;
-    position: absolute;
+
     top: 100%;
     left: 0;
     right: 0;

@@ -3,11 +3,17 @@
   font-size: 24px;
   margin-bottom: $unit;
   font-weight: 700;
-  @include mq($from: tablet){
+  @include mq($from: tablet) {
     margin-bottom: $unit-large;
   }
 }
 
 .c-subtitle {
-  margin-bottom: $unit-large;
+  margin-bottom: 20px;
+}
+
+.c-title--path {
+  background: url("../img/section-title-path.svg") no-repeat;
+  background-position: right bottom;
+  padding-bottom: $unit-tiny;
 }
